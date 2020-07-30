@@ -111,3 +111,7 @@ media/
 **/migrations/**
 !**/migrations
 !**/migrations/__init__.py
+
+#mac
+.DS_Store
+settings.ini
