@@ -10,6 +10,9 @@ black = "*"
 
 [packages]
 django = "*"
+djangorestframework = "*"
+django-phonenumber-field = "*"
+phonenumbers = "*"
 
 [requires]
 python_version = "3.7"
