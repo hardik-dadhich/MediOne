@@ -25,6 +25,8 @@ jobs:
         python -m pip install --upgrade pip
         pip install pipenv
         pipenv install
+    - name: Activate Venv
+      run: pipenv shell
     - name: Run App
       run: |
         python manage.py runserver
