@@ -1,19 +1,18 @@
-name: Django CI
+name: Django CI workflow
 
 on:
-  push:
-    branches: [ master ]
   pull_request:
-    branches: [ master, ankush, hrishita, bhavesh , utsav]
-
+  push:
+    branches: 
+      - master
+      - development
 jobs:
   build:
-
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [3.6, 3.7, 3.8]
+        python-version: [3.7]
 
     steps:
     - uses: actions/checkout@v2
@@ -26,9 +25,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install pipenv
         pipenv install
-    - name: Run Tests
-      run: |
-        python manage.py test
     - name: Run App
       run: |
         python manage.py runserver
