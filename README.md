@@ -1,7 +1,15 @@
+
+<p align="center">
+  <strong> checks here </strong><br>
+  <a href="https://github.com/hardik-dadhich/github-readme-stats/actions">
+<img alt="Pipeline building" src=https://github.com/hardik-dadhich/MediOne/workflows/Django%20CI%20workflow/badge.svg />
+  </a>
+ </p> 
+<hr>
 Run app on linux/Mac system
+<br>
 
 # Prerequirsite
-
 pipenv:latest
 
 # how to run :
