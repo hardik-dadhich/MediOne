@@ -9,6 +9,7 @@ from .import views
 router = routers.DefaultRouter()
 router.register('doctors', views.DoctorViewSet)
 router.register('patients', views.PatientViewSet)
+router.register('hospital', views.PatientViewSet)
 
 
 urlpatterns = [
