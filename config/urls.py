@@ -21,5 +21,6 @@ from rest_framework.authtoken.views import obtain_auth_token
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
-    path('auth/', obtain_auth_token)
+    path("", include("api.urls", namespace="users")),
+    path('auth/', obtain_auth_token) #rest api secure
 ]
