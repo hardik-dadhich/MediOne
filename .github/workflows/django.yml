@@ -29,6 +29,7 @@ jobs:
       run: |
         export VENV_HOME_DIR=$(pipenv --venv)
         source $VENV_HOME_DIR/bin/activate
+        which python
     - name: Run App
       run: |
         python manage.py runserver
