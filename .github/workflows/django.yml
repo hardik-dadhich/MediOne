@@ -26,7 +26,9 @@ jobs:
         pip install pipenv
         pipenv install
     - name: Activate Venv
-      run: pipenv shell
+      run: |
+        export VENV_HOME_DIR=$(pipenv --venv)
+        source $VENV_HOME_DIR/bin/activate
     - name: Run App
       run: |
         python manage.py runserver
