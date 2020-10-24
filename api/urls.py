@@ -13,6 +13,6 @@ router.register('hospital', views.HospitalViewSet)
 
 
 urlpatterns = [
-    path("", views.home , name='home'),
+    path("", views.home, name='home'),
     path("/api/", include(router.urls)),
 ]
