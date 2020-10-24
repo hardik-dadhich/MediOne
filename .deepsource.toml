@@ -1,15 +1,9 @@
 version = 1
 
+exclude_patterns = ["/static/*"]
+
 [[analyzers]]
 name = "python"
-enabled = true
-dependency_file_paths = [
-  "Pipfile",
-  "Pipfile.lock"
-]
-
-[[transformers]]
-name = "black"
 enabled = true
 
   [analyzers.meta]
