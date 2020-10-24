@@ -1,8 +1,8 @@
 from django.db import models
-from django.contrib.auth.models import User
 from phonenumber_field.modelfields import PhoneNumberField
 
 # Create your models here.
+
 
 class Hospital(models.Model):
     id = models.AutoField(primary_key=True)
@@ -14,6 +14,7 @@ class Hospital(models.Model):
 
     def __str__(self):
         return self.name
+
 
 class Doctor(models.Model):
     id = models.AutoField(primary_key=True)
@@ -27,6 +28,7 @@ class Doctor(models.Model):
     def __str__(self):
         return self.name
 
+
 class Patient(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=25)
@@ -39,8 +41,3 @@ class Patient(models.Model):
 
     def __str__(self):
         return self.name
-    
-
-    
-
-
